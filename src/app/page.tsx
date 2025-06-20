@@ -381,7 +381,7 @@ export default function ScheduleWisePage() {
   if (!mounted) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <div className="text-xl text-muted-foreground">Loading ScheduleWise...</div>
+        <div className="text-xl text-muted-foreground">Loading Timetable ICS Generator...</div>
       </div>
     );
   }
@@ -406,10 +406,10 @@ export default function ScheduleWisePage() {
         </div>
         <div className="flex items-center justify-center mb-2">
           <CalendarClock className="h-12 w-12 text-primary mr-3" />
-          <h1 className="text-4xl font-bold tracking-tight">Schedule<span className="text-primary">Wise</span></h1>
+          <h1 className="text-4xl font-bold tracking-tight">Timetable <span className="text-primary">ICS Generator</span></h1>
         </div>
         <p className="text-muted-foreground text-lg">
-          Intelligently plan your courses and manage your academic schedule with ease.
+          Turn your class schedule into an ICS calendar file. Fast, easy, and reliable.
         </p>
       </header>
 
@@ -420,7 +420,7 @@ export default function ScheduleWisePage() {
              Add New Course
           </CardTitle>
           <CardDescription>
-            Fill in the details for your course. Required fields are marked. Imported courses may need Start/End Dates adjusted if not provided in TXT.
+            Fill in the details for your course. Required fields are marked.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -482,9 +482,6 @@ export default function ScheduleWisePage() {
       )}
       
       <footer className="text-center mt-12 py-6 border-t">
-        <p className="text-sm text-muted-foreground">
-          ScheduleWise &copy; {new Date().getFullYear()}. Your smart scheduling assistant.
-        </p>
       </footer>
     </div>
   );

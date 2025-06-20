@@ -79,11 +79,11 @@ export const generateAndDownloadICS = (courses: Course[], defaultTimezone?: stri
         duration: { hours: durationHours, minutes: durationMinutes },
         location: course.location || undefined,
         description: course.description ? `Lecturer: ${course.description}` : undefined,
-        uid: `schedulewise-${course.id}-${index}@example.com`,
+        uid: `IcsGenerate-${course.id}-${index}@example.com`,
         startInputType: 'local', 
         startOutputType: 'local', // Keep output as local if start was local. Some calendars prefer this.
-        calName: 'ScheduleWise Calendar',
-        productId: 'ScheduleWiseApp',
+        calName: 'ICS Generator',
+        productId: 'IcsGenerateApp',
         alarms: [
           {
             action: 'display',
@@ -133,7 +133,7 @@ export const generateAndDownloadICS = (courses: Course[], defaultTimezone?: stri
 
   if (value) {
     const blob = new Blob([value], { type: 'text/calendar;charset=utf-8' });
-    saveAs(blob, 'ScheduleWise_Courses.ics');
+    saveAs(blob, 'Courses.ics');
   }
 };
 

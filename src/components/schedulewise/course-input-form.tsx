@@ -64,7 +64,6 @@ type CourseFormValues = z.infer<typeof courseFormSchema>;
 interface CourseInputFormProps {
   onSubmitCourse: (course: Course, isEdit: boolean) => void;
   initialData?: Course | null;
-  // `key` is a special React prop and should not be defined here for component logic
 }
 
 export function CourseInputForm({ onSubmitCourse, initialData }: CourseInputFormProps) {
@@ -416,7 +415,7 @@ export function CourseInputForm({ onSubmitCourse, initialData }: CourseInputForm
             name="description"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Description/Lecturer (Optional)</FormLabel>
+                <FormLabel>Lecturer (Optional)</FormLabel>
                 <FormControl>
                   <Input placeholder="" {...field} />
                 </FormControl>
@@ -434,6 +433,3 @@ export function CourseInputForm({ onSubmitCourse, initialData }: CourseInputForm
     </Form>
   );
 }
-    
-
-    

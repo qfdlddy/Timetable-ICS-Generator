@@ -1,3 +1,4 @@
+
 import type {Metadata} from 'next';
 import {Geist, Geist_Mono} from 'next/font/google';
 import './globals.css';
@@ -15,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'ScheduleWise',
-  description: 'Intelligent Course Scheduling Application',
+  title: 'Timetable ICS Generator',
+  description: 'Turn your class schedule into an ICS calendar file. Fast, easy, and reliable.',
 };
 
 export default function RootLayout({
