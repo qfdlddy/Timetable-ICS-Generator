@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 220 25% 95%; /* Off-white #F0F2F5 */
+    --foreground: 220 15% 25%; /* Dark Gray for text on light bg */
+    --card: 220 25% 98%; /* Slightly lighter than bg for cards */
+    --card-foreground: 220 15% 25%;
+    --popover: 220 25% 98%;
+    --popover-foreground: 220 15% 25%;
+    --primary: 216 23% 57%; /* Slate blue #778DA9 */
+    --primary-foreground: 0 0% 100%; /* White text on slate blue */
+    --secondary: 220 20% 88%; /* Lighter slate blue for secondary elements */
+    --secondary-foreground: 216 23% 30%;
+    --muted: 220 20% 88%;
+    --muted-foreground: 220 15% 45%;
+    --accent: 39 60% 66%; /* Soft gold #E0B872 */
+    --accent-foreground: 39 60% 25%; /* Dark text on soft gold */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 216 23% 85%; /* Lighter shade of primary for borders */
+    --input: 216 23% 88%; /* Similar to border or card for input bg */
+    --ring: 216 23% 57%; /* Primary color for focus rings */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar specific, can be adjusted if sidebar is used prominently */
+    --sidebar-background: 220 20% 92%;
+    --sidebar-foreground: 220 15% 25%;
+    --sidebar-primary: 216 23% 57%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 39 60% 66%;
+    --sidebar-accent-foreground: 39 60% 25%;
+    --sidebar-border: 216 23% 80%;
+    --sidebar-ring: 216 23% 57%;
+  }
+
+  .dark {
+    --background: 220 15% 15%; /* Dark slate/gray */
+    --foreground: 220 15% 85%; /* Light gray/off-white for text */
+    --card: 220 15% 20%; /* Darker card background */
+    --card-foreground: 220 15% 85%;
+    --popover: 220 15% 20%;
+    --popover-foreground: 220 15% 85%;
+    --primary: 216 30% 65%; /* Lighter slate blue for dark mode */
+    --primary-foreground: 216 23% 15%; /* Dark text on lighter primary */
+    --secondary: 220 15% 25%; /* Darker secondary */
+    --secondary-foreground: 220 15% 85%;
+    --muted: 220 15% 25%;
+    --muted-foreground: 220 15% 65%;
+    --accent: 39 60% 70%; /* Slightly adjusted gold for dark mode */
+    --accent-foreground: 39 60% 15%; /* Dark text on accent */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 216 15% 30%; /* Darker border */
+    --input: 216 15% 25%; /* Darker input bg */
+    --ring: 216 30% 65%; /* Primary color for focus rings in dark mode */
+    
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: 220 15% 18%;
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: 216 30% 65%;
+    --sidebar-primary-foreground: 216 23% 15%;
+    --sidebar-accent: 39 60% 70%;
+    --sidebar-accent-foreground: 39 60% 15%;
+    --sidebar-border: 216 15% 28%;
+    --sidebar-ring: 216 30% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
