@@ -27,8 +27,7 @@ This project was fully generated using **Firebase Studio**, based on a personal 
 
 You can try a deployed example here:
 
-➡️ [https://timetable-ics-generator.vercel.app/](https://timetable-ics-generator.vercel.app/)
-
+➡️ [https://timetable-ics-generator-q78zqubhr-qfdlddys-projects.vercel.app/](https://timetable-ics-generator-q78zqubhr-qfdlddys-projects.vercel.app/)
 ### ✅ Quick Deployment Steps
 
 1. Fork or clone this repository.
